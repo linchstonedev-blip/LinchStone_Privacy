@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LinchStone Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1a1d23;
+      --muted: #4b5563;
+      --rule: #d7dbe2;
+      --accent: #1d4ed8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 16px;
+      padding: 40px 40px 48px;
+      box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+    .lede, .updated {
+      color: var(--muted);
+    }
+    .updated { margin: 0 0 28px; font-size: 0.95rem; }
+    h2 {
+      margin: 32px 0 10px;
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+    p, li { color: var(--text); }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px; padding-left: 1.2em; }
+    li { margin: 0 0 8px; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <h1>LinchStone Privacy Policy</h1>
+      <p class="lede">This policy applies to the LinchStone phone app and to LinchStone Helper on your Windows PC.</p>
+      <p class="updated">Last updated November 11, 2026</p>
+
+      <h2>No LinchStone account or server</h2>
+      <p>LinchStone is a phone remote for AI tools that already run on your computer. There is no LinchStone account and no LinchStone server.</p>
+
+      <h2>How the phone and PC talk</h2>
+      <p>The phone talks only to LinchStone Helper on a PC you control, on your home network or over a tunnel you set up (Tailscale, Headscale, or WireGuard). The PC has to stay on, awake, and running LinchStone Helper. A sleeping PC looks offline. The phone does not run the models.</p>
+      <p>Chat text, image prompts, photos you attach, and file browsing go to that PC. They are not sent to LinchStone.</p>
+
+      <h2>Pairing keys</h2>
+      <p>Pairing keys stay on the phone and the PC. Unpair, or erase phone data in Settings, to drop the pairing key and the phone’s copy. Files on the PC stay until you delete them there.</p>
+
+      <h2>Cloud tools and API keys</h2>
+      <p>If you add a cloud tool and run that step, the helper on your PC sends that step’s text, and a photo if that step needs one, to the provider you named (for example OpenAI, Anthropic, or Gemini). Prompts for a cloud tool leave the PC only to the provider you added. The key for that provider is encrypted on the PC with Windows DPAPI and is never sent to LinchStone. The phone does not keep a copy. Nothing is sent until you run the step. Local tools (LM Studio, ComfyUI, Amuse) stay on the PC.</p>
+
+      <h2>Microphone and analytics</h2>
+      <p>The optional microphone button uses Android’s speech recognizer to turn speech into text. LinchStone does not receive or store the audio.</p>
+      <p>The on-phone analytics switch is off unless you turn it on. Those analytics are counts only, and the counts stay on the phone.</p>
+
+      <h2>Paid plans</h2>
+      <p>Paid plans are sold by Google Play. LinchStone stores only which plan is active so it can apply the tool cap. It never sees your card.</p>
+    </article>
+    <footer>LinchStone phone app and LinchStone Helper.</footer>
+  </main>
+</body>
+</html>
